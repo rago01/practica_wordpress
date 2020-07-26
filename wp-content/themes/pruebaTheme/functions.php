@@ -46,7 +46,7 @@ function sidebar(){
 
 add_action('widgets_init','sidebar');
 
-function productos_type(){
+function recetas_type(){
 
   $labels = array(
     'name' => 'Recetas',
@@ -69,8 +69,8 @@ function productos_type(){
     'show_in_rest' => true
   );
 
-  register_post_type('producto', $args);
+  register_post_type('Receta', $args);
 }
 
-add_action('init', 'productos_type')
+add_action('init', 'recetas_type')
 ?>
