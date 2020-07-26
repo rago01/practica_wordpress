@@ -69,7 +69,7 @@ function recetas_type(){
     'show_in_rest' => true
   );
 
-  register_post_type('Receta', $args);
+  register_post_type('Recetas', $args);
 }
 
 add_action('init', 'recetas_type')
