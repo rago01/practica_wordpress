@@ -12,7 +12,7 @@
       <div class="col-4">
         <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt=""> -->
       </div>
-      <div class="col-8">
+      <div class="col-12">
         <nav>
           <?php wp_nav_menu(
             array(
