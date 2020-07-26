@@ -6,25 +6,22 @@
           the_post();?>
           <h1 class="my-3"><?php  the_title(); ?></h1>
           <div class="row">
-            <div class="col-8">
-              <?php the_post_thumbnail('medium'); ?>
+            <div class="col-6">
+              <?php the_post_thumbnail('medium_large'); ?>
             </div>
-            <div class="col-4 my-3">
+            <div class="col-6 my-3">
               <?php the_content(); ?>
               <section class="row">
-                <div class="col-6">
-                  <button type="button" class="btn btn-danger" name="button">
-                    Paso a paso
-                  </button>
-                </div>
-                <div class="col-6">
-                  <button type="button" class="btn btn-warning" name="button">
-                    Ingredientes
-                  </button>
-                </div>
-                <div class="col-6">
-
-                </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-danger" name="button">
+                      Paso a paso
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-warning" name="button">
+                      Ingredientes
+                    </button>
+                  </div>
               </section>
             </div>
           </div>
