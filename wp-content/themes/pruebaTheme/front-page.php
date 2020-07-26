@@ -24,7 +24,7 @@
 
         if ($recetas->have_posts()) {
           while ($recetas->have_posts()) {
-            $producto->the_post();
+            $recetas->the_post();
         ?>
 
             <div class="col-4">
