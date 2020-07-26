@@ -64,7 +64,9 @@ function productos_type(){
     'menu_position' => 5,
     'menu_icon' => 'dashicons-carrot',
     'can_export' => true,
-    'publicly_queryable' => true
+    'publicly_queryable' => true,
+    'rewrite' => true,
+    'show_in_rest' => true
   );
 
   register_post_type('producto', $args);
