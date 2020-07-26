@@ -37,13 +37,13 @@
                           paso 2
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="modal fade" id="pasoApaso" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal fade" id="Ingredientes" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -57,7 +57,7 @@
                           Ingrediente 2
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                         </div>
                       </div>
                     </div>
