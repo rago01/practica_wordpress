@@ -11,6 +11,21 @@
             </div>
             <div class="col-4 my-3">
               <?php the_content(); ?>
+              <section class="row">
+                <div class="col-6">
+                  <button type="button" class="btn btn-danger" name="button">
+                    Paso a paso
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-warning" name="button">
+                    Ingredientes
+                  </button>
+                </div>
+                <div class="col-6">
+
+                </div>
+              </section>
             </div>
           </div>
           <?php
