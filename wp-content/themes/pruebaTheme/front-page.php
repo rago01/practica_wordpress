@@ -16,7 +16,7 @@
         <?php
 
         $args = array(
-          'post_type' => 'receta',
+          'post_type' => 'Recetas',
           'post_per_page' => -1
         );
 
