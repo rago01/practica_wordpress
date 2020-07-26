@@ -6,11 +6,9 @@
           the_post(); ?>
 
           <h1 class="my-3"><?php the_title(); ?>!!</h1>
-          <?php the_content(); ?>
-          <?php
+          <?php the_content();
         }
       }  ?>
-</main>
 
 <div class="lista-recetas">
   <h2 class="text-center">Recetas hechas en casa</h2>
@@ -19,18 +17,19 @@
 
         $args = array(
           'post_type' => 'receta',
-          'post_per_page' => -1,
-
+          'post_per_page' => -1
         );
+
         $recetas = new WP_Query($args);
 
         if ($recetas->have_posts()) {
           while ($recetas->have_posts()) {
-            $producto->the_post();?>
+            $producto->the_post();
+        ?>
 
             <div class="col-4">
                 <figure>
-                  <?php the_post_thumnail('large') ?>
+                  <?php the_post_thumnail('large'); ?>
                 </figure>
             </div>
             <?php
@@ -40,4 +39,5 @@
     </div>
 </div>
 
+</main>
 <?php get_footer(); ?>
