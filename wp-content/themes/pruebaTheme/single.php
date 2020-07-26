@@ -9,7 +9,7 @@
             <div class="col-6">
               <?php the_post_thumbnail('large'); ?>
             </div>
-            <div class="col-6">
+            <div class="col-6 my-3">
               <?php the_content(); ?>
             </div>
           </div>
