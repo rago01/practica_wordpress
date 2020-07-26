@@ -10,7 +10,7 @@
         }
       }  ?>
 
-<div class="lista-recetas">
+<!-- <div class="lista-recetas">
   <h2 class="text-center">Recetas hechas en casa</h2>
     <div class="row">
         <?php
@@ -37,7 +37,7 @@
         }
          ?>
     </div>
-</div>
+</div> -->
 
 </main>
 <?php get_footer(); ?>
