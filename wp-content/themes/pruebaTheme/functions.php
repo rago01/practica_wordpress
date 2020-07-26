@@ -44,5 +44,31 @@ function sidebar(){
   );
 }
 
-add_action('widgets_init','sidebar')
+add_action('widgets_init','sidebar');
+
+function productos_type(){
+
+  $labels = array(
+    'name' => 'Recetas',
+    'singular_name' => 'Receta',
+    'menu_name' => 'Recetas'
+  );
+
+  $args = array(
+    'label' => 'Recetas',
+    'description' => 'Recetas',
+    'labels' => $labels,
+    'supports' => array('title','editor','thumbnail', 'revisions'),
+    'public' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-carrot',
+    'can_export' => true,
+    'publicly_queryable' => true
+  );
+
+  register_post_type('producto', $args);
+}
+
+add_action('init', 'productos_type')
 ?>
