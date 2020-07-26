@@ -12,4 +12,32 @@
       }  ?>
 </main>
 
+<div class="lista-recetas">
+  <h2 class="text-center">Recetas hechas en casa</h2>
+    <div class="row">
+        <?php
+
+        $args = array(
+          'post_type' => 'receta',
+          'post_per_page' => -1,
+
+        );
+        $recetas = new WP_Query($args);
+
+        if ($recetas->have_posts()) {
+          while ($recetas->have_posts()) {
+            $producto->the_post();?>
+
+            <div class="col-4">
+                <figure>
+                  <?php the_post_thumnail('large') ?>
+                </figure>
+            </div>
+            <?php
+          }
+        }
+         ?>
+    </div>
+</div>
+
 <?php get_footer(); ?>
