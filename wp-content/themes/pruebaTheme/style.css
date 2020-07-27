@@ -38,12 +38,13 @@ header nav li{
 }
 
 header nav li a{
-  color:#FFFFFF;
+  color:#1C3643;
   text-transform:uppercase;
 }
 
 header nav li a:hover{
   color:#fff
+  text-decoration: none;
 }
 
 footer{
